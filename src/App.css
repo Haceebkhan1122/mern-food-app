@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #4c4949;
+}
+section.summary {
+    background: black;
+    width: 550px;
+    margin: auto;
+    border-radius: 15px;
+    padding: 25px 35px;
+    text-align: center;
+    color: white;
+}
+section.meals ul li {
+    color: black;
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    list-style: none;
+    margin-bottom: 30px;
+}
+section.meals ul li:last-child{
+    margin-bottom: 0;
+}
+.card {
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 25%);
+    border-radius: 14px;
+    background-color: white;
+    padding-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+span.count {
+    margin-left: 8px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section.meals {
+    display: block;
+    padding-bottom:20px;
+    padding-top: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+section.meals .card li h3 {
+    font-size: 16px;
+    font-weight: bolder;
+    margin-bottom: 0;
+    font-style: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+section.meals .card li div {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+}
+h4.price {
+    color: #00a84c;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.whole_controller {
+    display: inline-block;
+    width: 50%;
+}
+.whole_controller.two {
+    text-align: right;
+    padding-right: 30px;
+}
+.ui.input {
+    margin-bottom: 10px;
+}
+label.labels {
+    font-weight: bold;
+    padding-top: 7px;
+    margin-right: 10px;
+}
+.modal .content li {
+    list-style-type: none;
+}
+span.title {
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 16px;
+    border-bottom: 1px solid #e0e0e0;
+    display: block;
+    line-height: 35px;
+    margin-bottom: 15px;
+    max-height: 400px;
+    overflow-y: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.modal .content .total span {
+    font-weight: bolder;
+    font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal .content .total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.actions {
+    text-align: right;
+    margin-top: 15px;
+}
+.dd {
+    display: flex;
+    align-items: center;
+}
+li.hk_single_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.for_inline h2 {
+    margin-bottom: 0;
+}
+.signup {
+    margin-top: 90px;
 }
