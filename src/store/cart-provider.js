@@ -69,7 +69,6 @@ const cartReducer = (state, action) => {
       totalAmount: updatedTotalAmount,
     };
   }
-
   return state;
 };
 
